@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="BMIcalculator.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/svg/body-balance.svg" type="image/x-icon">
+    <title>BMI Calculator</title>
+</head>
+<body>
+    <script src="BMIcalculator.js"></script>
+
+    <!-- Display BMI CALCULATOR HERE -->
+
+        <div class="grid_container">
+            <div class="item1">
+                <h1>BMI CALCULATOR</h1>
+                <hr>
+            </div>
+            
+            <div class="item2">
+                <p>"Discover Your Health at a Glance: Calculate Your BMI Today!"</p> <br>
+            </div>
+            <div class="item3">
+                <form action="#">
+                    <div>
+                        <label for="weight">Weight:</label>
+                        <input type="number" id="weight" step="0.01" placeholder="Enter your weight in kg">
+                    </div>
+                    <div>
+                        <label for="height">Height:.</label>
+                        <input type="number" id="height" step="0.01" placeholder="Enter your height in meters">
+                        <hr>
+                    </div>
+                </form>
+            </div>
+            <div class="item4">
+                <button onclick="calculateBMI()" id="btn_calculator">CALCULATE</button>
+            </div>
+            <div class="item5" id="addResult">Result here</div>
+
+            <div class="item6">Note: The range shown in the BMI result  is used for both Men and Women at age of 20 or older. </div>
+        </div>
+
+</body>
+</html>
